@@ -1,30 +1,23 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import Tooltip from '../Tooltip';
+import 'styled-components/macro';
 
-const weatherData = {
-	months: [
-		{ name: 'Jun', temp: '20ºC' },
-		{ name: 'Jul', temp: '20ºC' },
-		{ name: 'Aug', temp: '20ºC' },
-	],
-	comparisons: [
-		'> Amsterdam',
-		'< Budapest',
-	],
-};
+import Tooltip from '../Tooltip';
+import styles from './styles';
 
 const WeatherCard = ({ weather }) => {
 	return (
-		<div>
+		<div css={styles}>
 			<Tooltip />
 
-			{weather.months.map((month) => (
-				<Fragment key={month.name}>
-					<p>{month.name}</p>
-					<p>{month.temp}</p>
-				</Fragment>
-			))}
+			<div className="months">
+				{weather.months.map((month) => (
+					<div key={month.name} className="month">
+						<p>{month.name}</p>
+						<p>{month.temp}</p>
+					</div>
+				))}
+			</div>
 
 			<p>Comparison</p>
 			{weather.comparisons.map((comparison) => (
@@ -35,7 +28,7 @@ const WeatherCard = ({ weather }) => {
 };
 
 WeatherCard.defaultProps = {
-	weather: weatherData,
+	weather: {},
 };
 
 WeatherCard.propTypes = {

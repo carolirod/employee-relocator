@@ -1,26 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import 'styled-components/macro';
 
 import WeatherCard from '../WeatherCard';
 import FlightsCard from '../FlightsCard';
+import styles from './styles';
 
 const CityCard = ({ city }) => {
 	return (
-		<div>
-			{city}
+		<div css={styles}>
+			{city.name}
 
-			<WeatherCard />
+			<WeatherCard weather={city.weather} />
 			<FlightsCard />
+
+			{/* <Goodies /> */}
 		</div>
 	);
 };
 
 CityCard.defaultProps = {
-	city: '',
+	city: {},
 };
 
 CityCard.propTypes = {
-	city: PropTypes.string,
+	city: PropTypes.shape({}),
 };
 
 export default CityCard;
