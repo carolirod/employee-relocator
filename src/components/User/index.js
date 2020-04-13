@@ -1,8 +1,11 @@
 import React from 'react';
+import 'styled-components/macro';
+
+import styles from './styles';
 
 const User = () => {
 	return (
-		<div>
+		<div css={styles}>
 			<p>User:</p>
 			<p>Jamie Towers</p>
 		</div>

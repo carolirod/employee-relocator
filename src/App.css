@@ -1,14 +1,28 @@
-.App {
+:root {
+	--base: #fff;
+	--borders: #ebecec;
+	--contrast: #292F36;
+	--primary: #4ECDC4;
+	--secondary: #E54487;
+}
+
+body {
+	background-color: var(--base);
+	color: var(--contrast);
+	font-size: 1rem;
+}
+
+.app {
 	text-align: center;
 }
 
 .App-logo {
-	height: 40vmin;
+	height: 3rem;
 	pointer-events: none;
 }
 
 main {
-	display: flex;
+	display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -17,19 +31,12 @@ main {
 	}
 }
 
-.App-header {
-	background-color: #282c34;
+.app-header {
 	min-height: 6rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
 }
 
 @keyframes App-logo-spin {

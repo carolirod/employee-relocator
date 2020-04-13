@@ -8,7 +8,7 @@ import styles from './styles';
 const WeatherCard = ({ weather }) => {
 	return (
 		<div css={styles}>
-			<Tooltip />
+			<Tooltip className="tooltip" />
 
 			<div className="months">
 				{weather.months.map((month) => (
@@ -32,7 +32,13 @@ WeatherCard.defaultProps = {
 };
 
 WeatherCard.propTypes = {
-	weather: PropTypes.shape({}),
+	/** Weather data */
+	weather: PropTypes.shape({
+		/** Temperature for the next months */
+		months: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+		/** Each comparison as a text  */
+		comparisons: PropTypes.arrayOf(PropTypes.string),
+	}).isRequired,
 };
 
 export default WeatherCard;

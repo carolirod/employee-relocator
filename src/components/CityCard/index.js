@@ -6,15 +6,23 @@ import WeatherCard from '../WeatherCard';
 import FlightsCard from '../FlightsCard';
 import styles from './styles';
 
-const CityCard = ({ city }) => {
+const CityCard = ({ className, city }) => {
 	return (
-		<div css={styles}>
-			{city.name}
+		<div
+			css={styles}
+			className={className}
+			bgSrc={city.image}
+		>
+			<div className="image__wrapper">
+				<span className="image" />
+			</div>
+
+			<h2 className="heading">{city.name}</h2>
 
 			<WeatherCard weather={city.weather} />
-			<FlightsCard />
+			<FlightsCard flights={city.flights} />
 
-			{/* <Goodies /> */}
+			{/* <Goodies cityGoodies={} /> */}
 		</div>
 	);
 };
