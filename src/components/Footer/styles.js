@@ -3,7 +3,6 @@ import { css } from 'styled-components';
 export default css`
     width: calc(100% - 8rem);
 	display: flex;
-	align-items: flex-end;
 	justify-content: center;
 	padding: 4rem;
 	box-shadow: inset 0px 10px 30px -20px #000;
@@ -24,6 +23,14 @@ export default css`
 	}
 
 	.col + .col {
-		margin-left: 5rem;
+		margin-left: 1.2rem;
+
+		@media only screen and (min-width: 769px) {
+			margin-left: 5rem;
+		}
+	}
+
+	@media only screen and (min-width: 769px) {
+		align-items: flex-end;
 	}
 `;

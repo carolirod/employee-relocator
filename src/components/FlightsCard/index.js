@@ -12,8 +12,7 @@ const FlightsCard = ({ className, flights }) => {
 			<p className="start-price">
 				{flights} €
 			</p>
-			{/* Click to search flights */}
-			<button className="btn-full-prices">See full prices</button>
+			<button className="btn-full-prices" onClick={() => console.log('See full prices for...')}>See full prices</button>
 			<Note>
 				* prices for one-way tickets
 			</Note>
@@ -22,7 +21,7 @@ const FlightsCard = ({ className, flights }) => {
 };
 
 FlightsCard.propTypes = {
-	flights: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+	flights: PropTypes.number.isRequired,
 };
 
 export default FlightsCard;

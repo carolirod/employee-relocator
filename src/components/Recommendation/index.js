@@ -35,7 +35,7 @@ const Recommendation = ({ handleRecommendation }) => {
 					onClick={() => handleClick('maybe')}
 					className="maybe"
 				>
-					Hmm...
+					Hmm
 				</button>
 				<button
 					onClick={() => handleClick('yes')}

@@ -4,8 +4,15 @@ import 'styled-components/macro';
 
 import CityCard from '../CityCard';
 import styles from './styles';
+import { useEffect } from 'react';
 
 const CitiesList = ({ cities, recommendedCity }) => {
+	useEffect(() => {
+		if (recommendedCity) {
+			document.querySelector(`.${recommendedCity}`).scrollIntoView({ behavior: 'smooth' })
+		}
+	}, [recommendedCity]);
+
 	return (
 		<div
 			css={styles}

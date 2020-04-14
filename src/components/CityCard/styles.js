@@ -14,6 +14,7 @@ export default css`
 		:hover {
 			transform: rotateX(0deg) rotateY(0deg);
 			box-shadow: -5px 20px 90px -45px #000;
+			z-index: 2;
 
 			.city__image--wrapper {
 				background-color: var(--primary-soft);

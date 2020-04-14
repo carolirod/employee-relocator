@@ -32,7 +32,7 @@ export default css`
 		:active {
 			outline: none;
 			border: 1px dashed;
-			border-color: var(--primary);
+			border-color: var(--secondary);
 		}
 	}
 
@@ -55,7 +55,7 @@ export default css`
 			text-transform: uppercase;
 			letter-spacing: 3px;
     		font-size: 1.2rem;
-			font-weight: 400;
+			font-weight: 700;
 			color: var(--base);
 
 			${({ selected }) => css`

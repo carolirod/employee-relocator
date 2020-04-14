@@ -40,7 +40,9 @@ export default css`
 		}
 
 		@media only screen and (min-width: 1200px) {
-			min-width: 30rem;
+			flex: 1 1 33%;
+			width: 38rem;
+			max-width: 38rem;
 		}
 	}
 
@@ -49,7 +51,7 @@ export default css`
 
 		@media only screen and (min-width: 769px) {
 			margin-top: 0;
-			margin-left: 4rem;
+			margin-left: -4rem;
 		}
 	}
 `;
