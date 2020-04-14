@@ -29,7 +29,7 @@ const Recommendation = ({ handleRecommendation }) => {
 					onClick={() => handleClick('none')}
 					className="none"
 				>
-					None
+					No
 				</button>
 				<button
 					onClick={() => handleClick('maybe')}
