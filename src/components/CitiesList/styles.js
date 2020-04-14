@@ -30,8 +30,7 @@ export default css`
 
 		${({ recommendedCity }) => css`
 			&.${recommendedCity} {
-				background-color: var(--selected);
-				color: black;
+				border-bottom: 6px solid var(--secondary);
 			}
 		`}
 

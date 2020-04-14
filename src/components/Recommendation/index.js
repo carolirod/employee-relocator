@@ -6,18 +6,25 @@ import styles from './styles';
 
 const Recommendation = ({ handleRecommendation }) => {
 	const [selected, setSelected] = useState('');
+	const [open, setOpen] = useState(false);
 
 	const handleClick = (sel) => {
 		setSelected(sel);
 		handleRecommendation(sel);
 	};
 
-	return (
-		<div css={styles} selected={selected}>
-			We can help you decide!
+	const toggle = () => {
+		setOpen(!open);
+	};
 
-			<div>
-				Tolerance to hot weather ...
+	return (
+		<div css={styles} selected={selected} className={open && 'js-open'}>
+			<button className="trigger" onClick={toggle}>
+				<p className="trigger__text">Help me decide!</p>
+			</button>
+
+			<div className="actions">
+				<p>Do you tolerate hot weather?</p>
 				<button
 					onClick={() => handleClick('none')}
 					className="none"

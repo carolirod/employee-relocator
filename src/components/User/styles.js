@@ -1,12 +1,12 @@
 import { css } from 'styled-components';
 
 export default css`
-	position: fixed;
 	top: 0;
 	right: 10rem;
     width: 15rem;
     padding: 1.6rem;
     text-align: left;
+	border-top: 1px solid var(--base);
 	background-color: var(--contrast-soft);
 	transform-origin: top;
 	animation: swing infinite 3s linear;
@@ -19,6 +19,14 @@ export default css`
 	.user__name {
 		font-weight: 700;
 		font-size: 1.4rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		align-self: flex-end;
+	}
+
+	@media only screen and (min-width: 769px) {
+		position: fixed;
 	}
 
 	@keyframes swing {

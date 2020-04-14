@@ -7,7 +7,7 @@ export const cardHeadingStyles = css`
 
 export default css`
 	position: relative;
-	margin: 1.6rem 0;
+	margin: 3rem 0;
 	background-color: var(--base);
 	color: var(--contrast);
 

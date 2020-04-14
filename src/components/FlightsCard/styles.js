@@ -22,8 +22,10 @@ export default css`
 		padding: 0.8rem;
 		border: none;
 		background-color: var(--primary);
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 1.2rem;
 		font-weight: 700;
-		font-size: 1.6rem;
 		color: white;
 	}
 `;

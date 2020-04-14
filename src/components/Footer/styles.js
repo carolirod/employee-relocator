@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 export default css`
-    width: 100%;
+    width: calc(100% - 8rem);
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
