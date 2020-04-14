@@ -1,0 +1,38 @@
+{
+	"madrid": {
+		"name": "Madrid",
+		"image": "https://www.haitongib.com/media/43923/5_-_madrid.jpg",
+		"weather": {
+			"months": [
+				{ "name": "Jun", "temp": "25ºC" },
+				{ "name": "Jul", "temp": "30ºC" },
+				{ "name": "Aug", "temp": "33ºC" }
+			]
+		},
+		"flights": 47
+	},
+	"amsterdam": {
+		"name": "Amsterdam",
+		"image": "https://previews.123rf.com/images/yasonya/yasonya1801/yasonya180100032/93739629-bike-over-canal-amsterdam-city-picturesque-town-landscape-in-netherlands-with-view-on-river-amstel-.jpg",
+		"weather": {
+			"months": [
+				{ "name": "Jun", "temp": "18ºC" },
+				{ "name": "Jul", "temp": "20ºC" },
+				{ "name": "Aug", "temp": "22ºC" }
+			]
+		},
+		"flights": 59
+	},
+	"budapest": {
+		"name": "Budapest",
+		"image": "https://www.roadaffair.com/wp-content/uploads/2017/01/hungarian-parliament-budapest-sunset-shutterstock_436252075-1024x683.jpg",
+		"weather": {
+			"months": [
+				{ "name": "Jun", "temp": "28ºC" },
+				{ "name": "Jul", "temp": "34ºC" },
+				{ "name": "Aug", "temp": "38ºC" }
+			]
+		},
+		"flights": 70
+	}
+}

@@ -10,7 +10,7 @@ const FlightsCard = ({ className, flights }) => {
 		<div css={styles} className={className}>
 			<h3 className="card__heading">Prices starting at</h3>
 			<p className="start-price">
-				33 €
+				{flights} €
 			</p>
 			{/* Click to search flights */}
 			<button className="btn-full-prices">See full prices</button>
