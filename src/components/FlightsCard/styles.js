@@ -19,6 +19,9 @@ export default css`
 	}
 
 	.btn-full-prices {
+		width: 70%;
+		height: 40px;
+		align-self: center;
 		padding: 0.8rem;
 		border: none;
 		background-color: var(--primary);
