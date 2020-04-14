@@ -51,7 +51,7 @@ export default css`
 
 		@media only screen and (min-width: 769px) {
 			margin-top: 0;
-			margin-left: -4rem;
+			margin-left: -3rem;
 		}
 	}
 `;

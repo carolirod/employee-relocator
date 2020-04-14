@@ -13,7 +13,7 @@ export default css`
 
 		:hover {
 			transform: rotateX(0deg) rotateY(0deg);
-			box-shadow: -5px 20px 90px -45px #000;
+			box-shadow: -5px 20px 90px -5px rgba(0,0,0,0.9);
 			z-index: 2;
 
 			.city__image--wrapper {
