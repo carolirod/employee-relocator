@@ -3,19 +3,20 @@ import PropTypes from 'prop-types';
 import 'styled-components/macro';
 
 import styles from './styles';
+import Note from '../Note';
 
-const FlightsCard = ({ flights }) => {
+const FlightsCard = ({ className, flights }) => {
 	return (
-		<div css={styles}>
-			<div className="week">
-				{flights.map((weekDay) => (
-					<div key={weekDay.day}>
-						<p>{weekDay.day}</p>
-						<p>{weekDay.price}</p>
-					</div>
-				))}
-			</div>
-			<p>one way prices</p>
+		<div css={styles} className={className}>
+			<h3 className="card__heading">Prices starting at</h3>
+			<p className="start-price">
+				33 €
+			</p>
+			{/* Click to search flights */}
+			<button className="btn-full-prices">See full prices</button>
+			<Note>
+				* prices for one-way tickets
+			</Note>
 		</div>
 	);
 };

@@ -13,15 +13,22 @@ const CityCard = ({ className, city }) => {
 			className={className}
 			bgSrc={city.image}
 		>
-			<div className="image__wrapper">
-				<span className="image" />
+			<div className="city__image--wrapper">
+				<span className="city__image" />
 			</div>
 
-			<h2 className="heading">{city.name}</h2>
+			<h2 className="city__heading">{city.name}</h2>
 
-			<WeatherCard weather={city.weather} />
-			<FlightsCard flights={city.flights} />
+			<WeatherCard
+				weather={city.weather}
+				className="city__info-card"
+			/>
+			<FlightsCard
+				flights={city.flights}
+				className="city__info-card"
+			/>
 
+			{/* Offices - location */}
 			{/* <Goodies cityGoodies={} /> */}
 		</div>
 	);

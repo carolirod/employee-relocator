@@ -27,10 +27,6 @@ const cities = {
 			{ day: 'Mon', price: '30€' },
 			{ day: 'Tue', price: '30€' },
 			{ day: 'Wed', price: '30€' },
-			{ day: 'Thu', price: '30€' },
-			{ day: 'Fri', price: '30€' },
-			{ day: 'Sat', price: '30€' },
-			{ day: 'Sun', price: '30€' },
 		],
 	},
 	amsterdam: {
@@ -51,10 +47,6 @@ const cities = {
 			{ day: 'Mon', price: '30€' },
 			{ day: 'Tue', price: '30€' },
 			{ day: 'Wed', price: '30€' },
-			{ day: 'Thu', price: '30€' },
-			{ day: 'Fri', price: '30€' },
-			{ day: 'Sat', price: '30€' },
-			{ day: 'Sun', price: '30€' },
 		],
 	},
 	budapest: {
@@ -75,10 +67,6 @@ const cities = {
 			{ day: 'Mon', price: '30€' },
 			{ day: 'Tue', price: '30€' },
 			{ day: 'Wed', price: '30€' },
-			{ day: 'Thu', price: '30€' },
-			{ day: 'Fri', price: '30€' },
-			{ day: 'Sat', price: '30€' },
-			{ day: 'Sun', price: '30€' },
 		],
 	},
 };
@@ -110,6 +98,7 @@ const App = () => {
 			<header className="app-header">
 				<Logo />
 				<User />
+				<h1>Employee relocator - Next office stop</h1>
 			</header>
 
 			<main>

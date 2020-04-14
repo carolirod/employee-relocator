@@ -1,21 +1,43 @@
 import { css } from 'styled-components';
 
+export const cardHeadingStyles = css`
+	font-size: 1.8rem;
+	margin: 0 0 1rem;
+`;
+
 export default css`
 	position: relative;
 	margin: 1.6rem 0;
-	border: 1px solid;
-	border-color: var(--borders);
+	background-color: var(--base);
+	color: var(--contrast);
 
-	.months {
+	.card__heading {
+		${cardHeadingStyles}
+	}
+
+	.weather__months {
 		display: flex;
 	}
 
-	.month {
+	.weather__month {
 		flex: 1 0 calc(${100 / 3}%);
+
+		& + .weather__month {
+			border-left: 1px dotted;
+			border-color: var(--secondary);
+		}
 	}
 
-	:hover .tooltip {
-		min-height: 5.5rem;
-		opacity: 1;
+	.weather__month__name {
+		font-weight: 700;
+		color: var(--secondary);
+	}
+
+	.weather__month__temp {
+		font-size: 1.6rem;
+	}
+
+	.note {
+		margin-top: 1rem;
 	}
 `;

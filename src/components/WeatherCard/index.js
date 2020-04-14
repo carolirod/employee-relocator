@@ -2,27 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'styled-components/macro';
 
-import Tooltip from '../Tooltip';
+import Note from '../Note';
 import styles from './styles';
 
-const WeatherCard = ({ weather }) => {
+const WeatherCard = ({ className, weather }) => {
 	return (
-		<div css={styles}>
-			<Tooltip className="tooltip" />
-
-			<div className="months">
+		<div css={styles} className={className}>
+			<h3 className="card__heading">Average temperature</h3>
+			<div className="weather__months">
 				{weather.months.map((month) => (
-					<div key={month.name} className="month">
-						<p>{month.name}</p>
-						<p>{month.temp}</p>
+					<div key={month.name} className="weather__month">
+						<p className="weather__month__name">{month.name}</p>
+						<p className="weather__month__temp">{month.temp}</p>
 					</div>
 				))}
 			</div>
+			<Note className="note">
+				* weather-month average is from 5 past years data
+			</Note>
 
-			<p>Comparison</p>
+			{/* <p>Comparison</p>
 			{weather.comparisons.map((comparison) => (
 				<p key={comparison}>{comparison}</p>
-			))}
+			))} */}
 		</div>
 	);
 };

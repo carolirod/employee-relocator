@@ -4,7 +4,7 @@ export default css`
 	display: flex;
 	width: 100%;
 
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 769px) {
 		margin: 0 auto;
 	}
 
@@ -13,18 +13,21 @@ export default css`
 		justify-content: space-between;
 		flex-direction: column;
 		padding: 0 0.8rem;
+		perspective: 1000px;
 
 		@media only screen and (max-width: 768px) {
 			width: calc(100% - 1.6rem);
 		}
 
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: 769px) {
 			flex-direction: row;
 			margin: 0 auto;
 		}
 	}
 
 	.city {
+		flex: 1 0 auto;
+
 		${({ recommendedCity }) => css`
 			&.${recommendedCity} {
 				background-color: yellow;
@@ -32,17 +35,22 @@ export default css`
 			}
 		`}
 
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: 769px) {
 			flex: 1 1 30%;
+			width: 25rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			min-width: 30rem;
 		}
 	}
 
 	.city + .city {
 		margin-top: 2.4rem;
 
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: 769px) {
 			margin-top: 0;
-			margin-left: 2.4rem;
+			margin-left: 4rem;
 		}
 	}
 `;
