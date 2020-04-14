@@ -17,14 +17,10 @@ const WeatherCard = ({ className, weather }) => {
 					</div>
 				))}
 			</div>
+
 			<Note className="note">
 				* weather-month average is from 5 past years data
 			</Note>
-
-			{/* <p>Comparison</p>
-			{weather.comparisons.map((comparison) => (
-				<p key={comparison}>{comparison}</p>
-			))} */}
 		</div>
 	);
 };

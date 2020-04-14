@@ -21,7 +21,7 @@ export default css`
 
 		@media only screen and (min-width: 769px) {
 			flex-direction: row;
-			margin: 0 auto;
+			margin: 8rem auto;
 		}
 	}
 
@@ -30,7 +30,7 @@ export default css`
 
 		${({ recommendedCity }) => css`
 			&.${recommendedCity} {
-				background-color: yellow;
+				background-color: var(--selected);
 				color: black;
 			}
 		`}

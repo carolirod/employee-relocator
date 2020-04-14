@@ -3,16 +3,17 @@ import { css } from 'styled-components';
 export default css`
 	position: relative;
 	overflow: hidden;
-	padding: 0 1.6rem 0.8rem;
+	padding: 0 1.6rem 1.6rem;
+	background-color: var(--contrast-soft);
 
 	@media only screen and (min-width: 769px) {
-		transform: rotateX(-5deg) rotateY(10deg);
+		transform: rotateX(5deg) rotateY(10deg);
 		transform-origin: left;
-		box-shadow: -10px 10px 45px -25px var(--secondary);
+		box-shadow: -10px 10px 45px -25px #000;
 
 		:hover {
 			transform: rotateX(0deg) rotateY(0deg);
-			box-shadow: -5px 20px 90px -45px var(--secondary);
+			box-shadow: -5px 20px 90px -45px #000;
 
 			.city__image--wrapper {
 				background-color: var(--primary-soft);
@@ -27,8 +28,10 @@ export default css`
 
 	.city__heading {
 		text-transform: uppercase;
-		margin: 0.8rem;
+		margin: 2rem 0 1.6rem;
 		font-weight: 300;
+		font-size: 2.6rem;
+		letter-spacing: 10px;
 	}
 
 	.city__info-card {

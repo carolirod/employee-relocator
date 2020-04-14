@@ -6,8 +6,8 @@ import styles from './styles';
 const User = () => {
 	return (
 		<div css={styles}>
-			<p>User:</p>
-			<p>Jamie Towers</p>
+			<p className="user__label">User</p>
+			<p className="user__name">Jamie Towers</p>
 		</div>
 	);
 };

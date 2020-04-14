@@ -12,8 +12,7 @@ export default css`
 	}
 
 	.start-price {
-		margin: 0;
-		line-height: 2;
+		margin: 0 0 1rem;
 		font-size: 4rem;
 		font-weight: 700;
 		color: var(--primary);
@@ -23,7 +22,8 @@ export default css`
 		padding: 0.8rem;
 		border: none;
 		background-color: var(--primary);
+		font-weight: 700;
+		font-size: 1.6rem;
 		color: white;
-		cursor: pointer;
 	}
 `;

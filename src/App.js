@@ -4,6 +4,7 @@ import Logo from './components/Logo';
 import User from './components/User';
 import CitiesList from './components/CitiesList';
 import Recommendation from './components/Recommendation';
+import Footer from './components/Footer';
 
 import './App.css';
 import cities from './data/cities.json';
@@ -32,10 +33,10 @@ const App = () => {
 
 	return (
 		<div className="app">
-			<header className="app-header">
+			<header className="app__header">
 				<Logo />
+				<h1 className="app__heading">Employee relocator - Next office stop</h1>
 				<User />
-				<h1>Employee relocator - Next office stop</h1>
 			</header>
 
 			<main>
@@ -48,6 +49,8 @@ const App = () => {
 					recommendedCity={recommendation}
 				/>
 			</main>
+
+			<Footer />
 		</div>
 	);
 };

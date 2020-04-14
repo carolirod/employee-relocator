@@ -3,13 +3,14 @@
 
 :root {
 	--base: #fff;
-	--borders: #c4c4c4;
-	--contrast: #292F36;
+	--selected: #e2e2e2;
 	--subtle-text: #a8acae;
+	--contrast: #292F36;
+	--contrast-soft: #373e46;
 	--primary: #4ECDC4;
 	--primary-soft: #c4f5f1;
 	--secondary: #E54487;
-	--tertiary: #facc75;
+	--tertiary: #fadda7;
 }
 
 html {
@@ -21,6 +22,11 @@ body {
 	color: var(--base);
 	font-size: 1.4rem;
 	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+.app {
+	width: 100%;
 }
 
 h1,
@@ -28,47 +34,40 @@ h2,
 h3,
 h4,
 h5,
-h6,
-button {
-	margin: 0;
+h6 {
 	font-family: 'Bebas Neue', cursive;
 	letter-spacing: 3px;
 	font-weight: 400;
-}
-
-.app {
-	text-align: center;
-}
-
-.app-logo {
-	height: 3rem;
-	pointer-events: none;
 }
 
 main {
 	display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.app-header {
-	min-height: 6rem;
+.app__header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	min-height: 6rem;
+	padding: 2.4rem;
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
+.app__heading {
+	margin: 2rem 0;
+}
 
-	to {
-		transform: rotate(360deg);
-	}
+/** Resets **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
 }

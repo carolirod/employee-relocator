@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 export const cardHeadingStyles = css`
 	font-size: 1.8rem;
-	margin: 0 0 1rem;
+	margin: 1.2rem 0;
 `;
 
 export default css`

@@ -1,15 +1,18 @@
 import { css } from 'styled-components';
 
 export default css`
+    position: fixed;
+    right: 0;
+	z-index: 1;
 	display: inline-block;
 	margin: 2.4rem 0;
 	padding: 1.6rem 0.8rem;
-	border: 1px solid;
-	border-color: var(--borders);
+	background-color: var(--base);
+	color: var(--contrast);
 
 	${({ selected }) => css`
 		.${selected} {
-			background-color: yellow;
+			background-color: var(--selected);
 		}
 	`}
 `;
