@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Result: https://employee-relocator.herokuapp.com/
+
+## About
+
+A person's vacation is about to end. She works at an international company, so she can choose another office to work from: either Amsterdam, Madrid, or Budapest. Help her choose which office to go to – she’d like someplace with good weather or cheap flights (or both).
+
 ## The how
 
 ### Analyzing problem
@@ -16,5 +22,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Ready for starting
 ![Ready for starting](./docs/img/ready_for_starting.jpg)
-
-> I also simplified some things, to have time to deliver something decent.
